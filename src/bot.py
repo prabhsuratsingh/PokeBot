@@ -24,7 +24,7 @@ class MyClient(discord.Client):
             
             pokemon_name = msg.split('$')
             if is_valid_pokemon(pokemon_name[1]):
-                await message.channel.send(get_sprite(pokemon_name[1]))
+                await message.channel.send(get_sprite(pokemon_name[1    ]))
                 await message.channel.send(f'{pokemon_name[1]} says hii!!!!')
             else:
                 await message.channel.send('enter valid pokemon name!')
